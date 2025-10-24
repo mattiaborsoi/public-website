@@ -46,7 +46,7 @@ export async function onRequestPost({ request, env }) {
             );
         }
 
-        const mailgunURL = `https://api.mailgun.net/v3/${MAILGUN_DOMAIN}/messages`;
+        const mailgunURL = `https://api.eu.mailgun.net/v3/${MAILGUN_DOMAIN}/messages`;
         
         // Use FormData for Mailgun's API
         const formData = new FormData();
