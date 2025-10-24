@@ -56,7 +56,7 @@ export async function onRequestPost({ request, env }) {
         formData.append('text',
 `You received a new message from your website contact form:
 
-Name: ${name}
+Full Name: ${name}
 Email: ${email}
 
 Message:
