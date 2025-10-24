@@ -30,7 +30,7 @@ export async function onRequestPost({ request, env }) {
 
         if (!turnstileSuccess) {
             return new Response(
-                JSON.stringify({ message: 'CAPTCHA verification failed. Please refresh or try again. You can also email mattia@borsoi.co.uk directly.' }),
+                JSON.stringify({ message: 'CAPTCHA verification failed. Please refresh to try again.' }),
                 { status: 403, headers: { 'Content-Type': 'application/json' } }
             );
         }
