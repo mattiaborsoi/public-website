@@ -30,7 +30,7 @@ export async function onRequestPost({ request, env }) {
 
         if (!turnstileSuccess) {
             return new Response(
-                JSON.stringify({ message: 'CAPTCHA verification failed. Please try again.' }),
+                JSON.stringify({ message: 'CAPTCHA verification failed. Please refresh or try again.' }),
                 { status: 403, headers: { 'Content-Type': 'application/json' } }
             );
         }
@@ -46,11 +46,11 @@ export async function onRequestPost({ request, env }) {
             );
         }
 
-        const mailgunURL = `https://api.eu.mailgun.net/v3/${MAILGUN_DOMAIN}/messages`;
+        const mailgunURL = `https://api.eu.mailgun.net/v3/mg.borsoi.co.uk/messages`;
         
         // Use FormData for Mailgun's API
         const formData = new FormData();
-        formData.append('from', `Website Contact Form <mailgun@${MAILGUN_DOMAIN}>`);
+        formData.append('from', `Borsoi.co.uk Contact Form <postmaster@mg.borsoi.co.uk>`);
         formData.append('to', TO_EMAIL);
         formData.append('subject', `New Contact Form Submission from ${name}`);
         formData.append('text',
