@@ -13,7 +13,7 @@ export default function Home() {
             Mattia Borsoi
           </h1>
           <p className="text-sm" style={{ color: "var(--dim)" }}>
-            Software engineer. Building tools for transparency and open data.
+            Cybersecurity &amp; compliance professional. Helping organisations build resilient security programmes.
           </p>
           <div className="flex items-center gap-5 pt-1">
             <a
@@ -41,9 +41,32 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ── Expertise ───────────────────────────────────── */}
+        <section className="space-y-5">
+          <div className="label">Expertise</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              "Global Cybersecurity Programme Development",
+              "Network-wide Compliance Audits",
+              "Cybersecurity Framework Implementation",
+              "Risk Assessment & Remediation Planning",
+              "Stakeholder & Leadership Advisory",
+              "Regulatory & Standards Alignment",
+            ].map((item) => (
+              <div
+                key={item}
+                className="card px-4 py-3 text-xs leading-snug"
+                style={{ color: "var(--dim)" }}
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* ── Projects ────────────────────────────────────── */}
         <section className="space-y-5">
-          <div className="label">Projects</div>
+          <div className="label">Side projects</div>
 
           {/* companieshouse.watch */}
           <a
@@ -103,12 +126,13 @@ export default function Home() {
         <section className="space-y-4">
           <div className="label">About</div>
           <p className="text-sm leading-relaxed" style={{ color: "var(--dim)" }}>
-            I build software focused on data transparency, open infrastructure, and
-            tools that make public information accessible. My work spans full-stack
-            web development, data pipelines, and applied AI.
+            I work in global cybersecurity and compliance, helping organisations
+            build and audit security programmes that meet real-world regulatory
+            requirements. Based in the UK.
           </p>
           <p className="text-sm leading-relaxed" style={{ color: "var(--dim)" }}>
-            More detail on{" "}
+            Outside of work I write software — mostly tools around open data and
+            public infrastructure. Full professional background on{" "}
             <a
               href="https://www.linkedin.com/in/mborsoi/"
               target="_blank"
