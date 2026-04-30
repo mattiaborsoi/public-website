@@ -13,7 +13,7 @@ export default function Home() {
             Mattia Borsoi
           </h1>
           <p className="text-sm" style={{ color: "var(--dim)" }}>
-            Cybersecurity &amp; compliance professional. Helping organisations build resilient security programmes.
+            Associate Director, Global Cybersecurity Compliance · Grant Thornton International
           </p>
           <div className="flex items-center gap-5 pt-1">
             <a
@@ -126,9 +126,9 @@ export default function Home() {
         <section className="space-y-4">
           <div className="label">About</div>
           <p className="text-sm leading-relaxed" style={{ color: "var(--dim)" }}>
-            I work in global cybersecurity and compliance, helping organisations
-            build and audit security programmes that meet real-world regulatory
-            requirements. Based in the UK.
+            I lead global cybersecurity and compliance programmes at Grant Thornton
+            International, working with leadership teams across the network to build,
+            audit, and mature their security posture. Based in London.
           </p>
           <p className="text-sm leading-relaxed" style={{ color: "var(--dim)" }}>
             Outside of work I write software — mostly tools around open data and
