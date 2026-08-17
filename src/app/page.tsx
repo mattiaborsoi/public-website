@@ -113,6 +113,52 @@ export default function Home() {
             </div>
           </a>
 
+          {/* flightframe */}
+          <a
+            href="https://github.com/mattiaborsoi/flightframe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card block p-6 group transition-colors hover:border-[var(--accent)]"
+            style={{ borderColor: "var(--border)" }}
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div className="space-y-2 min-w-0">
+                <div className="flex items-center gap-3">
+                  <span
+                    className="text-sm font-semibold tracking-tight"
+                    style={{ color: "var(--text)" }}
+                  >
+                    flightframe
+                  </span>
+                  <span
+                    className="label px-1.5 py-0.5 rounded"
+                    style={{ background: "var(--border)", color: "var(--accent)" }}
+                  >
+                    source
+                  </span>
+                </div>
+                <p className="text-xs leading-relaxed" style={{ color: "var(--dim)" }}>
+                  A battery-powered six-colour e-ink frame that draws the aircraft
+                  passing over your home. Custom ESP32 firmware pulls rendered posters
+                  from a multi-tenant cloud backend — live flight tracking, a travel
+                  countdown, and per-household isolation — over its own device protocol.
+                </p>
+                <div className="flex items-center gap-3 pt-1">
+                  {["ESP32", "Python", "SQLite", "Docker", "e-ink"].map((tag) => (
+                    <span key={tag} className="label">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <span
+                className="label shrink-0 group-hover:text-[var(--accent)] transition-colors"
+              >
+                ↗
+              </span>
+            </div>
+          </a>
+
           {/* Placeholder for future projects */}
           <div
             className="card p-6 border-dashed"
