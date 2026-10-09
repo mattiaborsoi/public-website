@@ -68,9 +68,55 @@ export default function Home() {
         <section className="space-y-5">
           <div className="label">Side projects</div>
 
+          {/* Settl */}
+          <a
+            href="https://github.com/mattiaborsoi/Personal-Finance"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card block p-6 group transition-colors hover:border-[var(--accent)]"
+            style={{ borderColor: "var(--border)" }}
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div className="space-y-2 min-w-0">
+                <div className="flex items-center gap-3">
+                  <span
+                    className="text-sm font-semibold tracking-tight"
+                    style={{ color: "var(--text)" }}
+                  >
+                    Settl
+                  </span>
+                  <span
+                    className="label px-1.5 py-0.5 rounded"
+                    style={{ background: "var(--border)", color: "var(--accent)" }}
+                  >
+                    source
+                  </span>
+                </div>
+                <p className="text-xs leading-relaxed" style={{ color: "var(--dim)" }}>
+                  Self-hosted personal finance for couples. Drop in your bank statements
+                  and it sorts every line, learns your merchants, and keeps a running
+                  balance of who owes whom — on your own machine, with no bank logins,
+                  no cloud, and AI optional. Open-source.
+                </p>
+                <div className="flex items-center gap-3 pt-1">
+                  {["React", "FastAPI", "PostgreSQL", "Docker"].map((tag) => (
+                    <span key={tag} className="label">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <span
+                className="label shrink-0 group-hover:text-[var(--accent)] transition-colors"
+              >
+                ↗
+              </span>
+            </div>
+          </a>
+
           {/* companieshouse.watch */}
           <a
-            href="https://ch.borsoi.co.uk"
+            href="https://github.com/mattiaborsoi/companieshouse.watch"
             target="_blank"
             rel="noopener noreferrer"
             className="card block p-6 group transition-colors hover:border-[var(--accent)]"
@@ -89,13 +135,13 @@ export default function Home() {
                     className="label px-1.5 py-0.5 rounded"
                     style={{ background: "var(--border)", color: "var(--accent)" }}
                   >
-                    live
+                    source
                   </span>
                 </div>
                 <p className="text-xs leading-relaxed" style={{ color: "var(--dim)" }}>
                   Real-time tracker for the UK Companies House register. Every filing,
                   officer appointment, and ownership change as it streams — with automated
-                  anomaly detection and AI-powered pattern analysis. Free, open-source.
+                  anomaly detection and AI-powered pattern analysis. Open-source.
                 </p>
                 <div className="flex items-center gap-3 pt-1">
                   {["Next.js", "Python", "PostgreSQL", "Anthropic"].map((tag) => (
